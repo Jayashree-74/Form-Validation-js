@@ -1,0 +1,209 @@
+/* we reset deafult margin and padding of the brrowser using "*" selector  */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.title{
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+
+div label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+form div input{
+    width: 100%;
+    height: 37px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid rgba(11, 12, 11, 0.8);
+    padding: 0 30px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0,0.1);
+}
+
+form div{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input:focus{
+    border: 2px solid rgba(5, 163, 18, 0.9);
+}
+
+/* style for an form icons */
+form div i{
+    position: absolute;
+    padding: 10px;
+}
+
+.failure-icon,
+.success-icon{
+    right: 0;
+    opacity: 0;
+}
+
+.failure-icon,
+.error{
+    color: rgb(215, 7, 7);
+}
+
+.success-icon,
+.error{
+    color: rgb(18, 207, 12);
+}
+
+.error{
+    font-size: 14.5px;    
+    margin-top: 15px;
+}
+
+/* style for css */
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border: 2px solid rgb(107, 3, 3);
+    border-radius: 10px;
+    background: linear-gradient(yellow, red);
+    padding: 10px, 0;
+    font-size: 30px;
+    color: white;
+    box-shadow: 2px 3px 6px 2px rgb(54, 52, 52);
+    transition: all 0.1sec ease;
+}
+
+button:hover{
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+  }
+
+  /* this style for the upper or social  buttons */
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .btn-1,
+  .btn-2{
+    padding: 10px 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 3px solid rgb(11, 10, 10);
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0px 4px 16px #242726;
+  }
+
+  .btn-2{
+    background-color: #242726;
+    color: white;
+    }
+
+    .question{
+        font-size: 25px;
+    }
+
+    .question span{
+        color: rgb(226, 12, 12);
+    }
+
+    .or{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin: 50px;
+    }
+
+    .conent-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: linear-gradient(rgb(227, 227, 12), rgb(235, 5, 5));
+        width: 55%;
+        min-height: 100vh;
+        padding: 10px 20px;
+    }
+
+    form{
+        width:45%;
+        max-width: none;
+    }
+
+    
+    .bg-img{
+        background-image: url(https://svgshare.com/i/sUd.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        /* border: 2px solid black; */
+        height: 65%;
+    }
+    .text{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
+
+    form{
+        width: 45%;
+        max-width: none;
+    }
+
+    /* For screens with a width from 900px,  */
+    @media (max-width:900px) {
+        .container{
+            flex-direction: column;
+        }
+
+        form,
+        .conent-box{
+            width: 100%;
+        }
+
+        .buttons{
+            flex-direction: column;
+        }
+
+        .bg-img{
+            height: 70vh;
+        }
+    }
+
+    /* For screens with a width from 425px,  */
+    @media (max-width:425px){
+        form{
+            padding: 20px;
+        }
+    }

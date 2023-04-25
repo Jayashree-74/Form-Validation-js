@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Form-Validaton</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="conent-box">
+
+                <div class="logo">
+                    <img src="https://svgshare.com/i/_go.svg"  alt="">
+
+                </div>
+
+                <div class="bg-img"></div>
+
+                <div class="text">
+                    Get Set Go <br>
+                    Happy Chatting !
+                </div>
+        </div>
+
+
+        <form id="form">
+            
+            <div class="social">
+
+                <div class="title">Get Started</div>
+
+                <div class="question">
+                    Allready Have an Account? <br>
+                    <span>Sign In </span>
+                </div>
+
+                <div class="buttons">
+                    <div class="btn-1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/706px-Google_%22G%22_Logo.svg.png" style="width: 45px;height: 45px;">
+                        Sign Up
+                    </div>
+                    <div class="btn-2">
+                        <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png" style="width: 45px; height: 45px;">
+                        Sign Up
+                    </div>
+                </div>
+
+                <div class="or">Or</div>
+
+
+            </div>
+            <div>
+                <label for="userName">User Name :-</label>
+                <i class="fas fa-user"></i>
+
+                <input type="text" name="username" id="userName" placeholder="Jayashree">
+
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="Email">Email :-</label>
+                <i class="far fa-envelope"></i>
+
+                <input type="email" name="email" id="mail" placeholder="name@gmail.com">
+
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="password">Password :-</label>
+                <i class="fas fa-lock"></i>
+
+                <input type="password" name="password" id="passsword" placeholder="password">
+
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+
+                <div class="error"></div>
+            </div>
+
+            <!-- create submit button -->
+
+            <button id="btn" type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
